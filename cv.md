@@ -51,4 +51,29 @@ function accum(str) {
   return str.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 }
 ```
+## Languages
 
+1. Russian - `native`
+2. English - `A2+`
+3. Spanish - `A1`
+
+
+## Education
+
+* 1993 - 1998 **Specialist degree, management specialist**
+    *Murmansk State Technical University*
+* 2007 - 2008 **Program "Leadership energy"**
+    *VTB Corporate university*
+
+### Other
+
+* System thinking.
+* High speed of work. 
+* Focus for achieving results.
+* Stress resistance.
+
+### Interests
+
+* Travel
+* Street workout
+* Football
