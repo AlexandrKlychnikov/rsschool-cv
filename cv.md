@@ -4,7 +4,7 @@
 
 * +7 911 345 66 10
 * [klychnikov75@mail.ru](mailto:klychnikov75@mail.ru)
-* [GitHub](https://github.com/AlexandrKlychnikov)
+* [GitHub https://github.com/AlexandrKlychnikov](https://github.com/AlexandrKlychnikov)
 
 ## About me
 
