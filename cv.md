@@ -30,6 +30,7 @@ Responsible, attentive to details, quick learner-that's all about me.
 ## `Code examples`   
 
 ``` javascript
+//accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 
 function accum(str) {
   let newS = str.split('').reduce((acc, cur, i) => {
@@ -44,5 +45,10 @@ function accum(str) {
   return newS.join('-');
 }
 
+//refactoring
+
+function accum(str) {
+  return str.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
 ```
 
