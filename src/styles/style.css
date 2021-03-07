@@ -1,0 +1,88 @@
+header, main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+main {
+    flex-wrap: wrap;
+}    
+
+.photo {
+    max-height: 410px;
+    width: auto;
+}
+
+.container-photo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+.header-text {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.skills-title, .training-title, 
+.languages-title, .code_example_header, 
+.education-title, .interests-title,.pre_text {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.training {
+  flex-grow: 2;
+
+}
+
+.languages, .skills {
+  flex-grow: 1;
+}
+
+.interests {
+  flex-basis: 100%;
+}
+
+.training-text__content, .languages-text, .skills-text {
+    font-weight: bold;
+}
+
+.training-text__link {
+    font-weight: normal;
+}
+
+ul, ol {
+ padding-left: 20px;    
+}
+
+li {
+  line-height: 1.5em;    
+}
+
+.header-contacts li {
+  line-height: 1.1em; 
+}
+
+.pre_text {
+    background-color: #e2e2e2;
+    color: #000;
+    font-size: 16px;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+.footer-text {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #757575;
+  }
+
