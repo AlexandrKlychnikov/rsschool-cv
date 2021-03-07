@@ -5,40 +5,135 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aleksandr Klychnikov CV">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="src/styles/style.css">
 
     <title>Aleksandr Klychnikov CV</title>
 </head>
 <body>
   <header>
     <div class="container-photo">
-      <img class="photo" src="src/Aleksandr.png" alt="Aleksandr Klychnikov photo">
+      <img class="photo" src="src/images/Aleksandr.png" alt="Aleksandr Klychnikov photo">
     </div>
-        <div class="header-text">
-          <h1 class="header-title">
-            Aleksandr Klychnikov
-          </h1>
-          <p class="header-purpose">Junior Frontend Developer</p>
-          <h2 class="header-contacts__title">Contacts</h2>
-          <ul class="header-contacts">
-            <li class="header-contacts__links">
-              <a class="header-contacts__link" href="mailto:klychnikov75@mail.ru">E-mail: klychnikov75@mail.ru</a>
-            </li>
-            <li class="header-contacts">
-                <p class="header-contacts__phone">Phone: +7(911)345-66-10</p>
-              </li>
-            <li class="header-contacts__links">
-              <a class="header-contacts__link" href="https://github.com/AlexandrKlychnikov">GitHub</a>
-            </li>
+    <div class="header-text">
+      <h1 class="header-title">Alexandr Klychnikov</h1>     
+      <p class="header-purpose">Beginner Frontend Developer</p>
+      <h2 class="header-contacts__title">Contacts</h2>
+      <ul class="header-contacts">
+        <li class="header-contacts__links">E-mail:
+          <a class="header-contacts__link" href="mailto:klychnikov75@mail.ru">klychnikov75@mail.ru</a>
+        </li>
+        <li class="header-contacts">
+          <p class="header-contacts__phone">Phone: +7(911)345-66-10</p>
+        </li>
+        <li class="header-contacts__links">
+          <a class="header-contacts__link" href="https://github.com/AlexandrKlychnikov">GitHub</a>
+        </li>
+      </ul>
+      <h2>About me</h2>
+      <p>
+          I am a bank officer. I have a lot of experience working in the credit departments of various banks.
+          I've always been interested in programming. In my professional career, 
+          I have repeatedly beaten routine tasks with the help of VBA.
+          I recently decided to retrain as a frontend developer. 
+          Responsible, attentive to details, quick learner-that's all about me.
+      </p>    
+    </div>
+  </header>
+  <main>
+    <section class="skills">
+      <h2 class="skills-title">
+        Skills
+      </h2>
+      <ul class="skills-text">
+        <li class="skills-text__content">HTML / CSS</li>
+        <li class="skills-text__content">JavaScript</li>
+        <li class="skills-text__content">Git, GitHub</li>
+        <li class="skills-text__content">Webpack, npm</li>
+        <li class="skills-text__content">VSCode, Figma</li>
+      </ul>
+    </section>
+    <section class="training">
+        <h2 class="training-title">Training</h2>
+        <ul class="training-text">
+          <li class="training-text__content">HTML Academy:
+              <a class="training-text__link" href="https://htmlacademy.ru">https://htmlacademy.ru</a>  
+          </li>
+          <li class="training-text__content">Learn JavaScript:
+            <a class="training-text__link" href="https://learn.javascript.ru">https://learn.javascript.ru</a>    
+          </li>
+          <li class="training-text__content">Codewars:
+            <a class="training-text__link" href="https://www.codewars.com">https://www.codewars.com</a> 
+          </li>
+        </ul>
+    </section>
+
+    <section class="languages">
+        <h2 class="languages-title">Languages</h2>
+        <ol class="languages-text">
+          <li class="languages-text__content">Russian - native</li>
+          <li class="languages-text__content">English - A2+</li>
+          <li class="languages-text__content">Spanish - A1</li>
+        </ol>
+    </section>
+      
+    <section class="code_example">
+      <h2 class="code_example_header">Code example:</h2>
+      <pre class="pre_text"><code class="code">
+//accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"          
+function accum(str) {
+  let newS = str.split('').reduce((acc, cur, i) => {
+    let letter = ''
+    for (let n=1; n <= i+1; n++) {
+      letter += cur; 
+    } 
+    let newLetter = letter[0].toUpperCase() + letter.toLowerCase().slice(1)
+    acc.push(newLetter);
+    return acc;
+  }, [])
+  return newS.join('-');
+}
+         
+//refactoring   
+function accum(str) {
+  return str.split('').map((c, i)=>(c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+      </code></pre>
+    </section>
+    <section class="education">
+      <h2 class="education-title">Education</h2>
+        <ul class="education-list">
+          <li class="education-list__content">
+            1993 - 1998 Murmansk State Technical University, specialist degree, banking management 
+          </li>
+          <li class="education-list__content">
+            2007 - 2008 VTB Corporate university, "Program "Leadership energy"
+          </li>
           </ul>
         </div>
-  </header>
+    </section>
+    <aside class="interests">
+        <h3 class="interests-title">Interests</h3>
+          <ul class="interests-list">
+            <li class="interests-list__content">
+              Travel
+            </li>
+            <li class="interests-list__content">
+              Street workout
+            </li>
+            <li class="interests-list__content">
+              Football
+            </li>
+          </ul>
+          </div>
+      </saside>
+      
+  </main>    
   
   
   <footer class="footer">
-    <div class="container">
-      <div class="footer-text">AlexandrKlychnikov © 2021</div>
+    <div class="footer-text">    
+      <p> Alexandr Klychnikov © 2021 </p>
     </div>
   </footer>
     
