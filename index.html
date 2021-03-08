@@ -82,8 +82,8 @@
 
 function accum(str) {
   let newS = str.split('').reduce((acc, cur, i) => {
-    let letter = ''
-    for (let n=1; n <= i+1; n++) {
+    let letter = '';
+    for (let n=1; n <= (i+1); n++) {
       letter += cur; 
     } 
     let newLetter = letter[0].toUpperCase() + letter.toLowerCase().slice(1)
@@ -128,8 +128,7 @@ function accum(str) {
           Stress resistance
         </li>
       </ul>
-          </div>
-      </aside>
+    </aside>
       <hr>
       <details class="interests">
         <summary><b>Interests</b></summary>
