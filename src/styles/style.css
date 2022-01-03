@@ -31,8 +31,6 @@ body {
 
 .menu li {
   list-style-type: none;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .skills-title,
