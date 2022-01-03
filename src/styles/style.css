@@ -4,62 +4,80 @@ body {
   width: 100%;
 }
 
-.header-title{
+.header-title {
   text-transform: uppercase;
+  margin: 10px;
 }
 
 .photo {
-    max-height: 380px;
-    width: auto;
-    float: left;
-    margin-right: 10px;
+  max-height: 380px;
+  width: auto;
+  float: left;
+  margin-right: 10px;
 }
 
 .header-text {
-    margin-left: 20px;
-    text-align: justify;
+  margin-left: 20px;
+  text-align: justify;
 }
 
-.skills-title, .training-title, 
-.languages-title, .code_example_header, 
-.education-title, .interests-title,.pre_text {
-    margin-top: 0;
-    margin-bottom: 5px;
+.menu {
+  display: flex;
+  column-gap: 5px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.skills-title,
+.training-title,
+.languages-title,
+.code_example_header,
+.education-title,
+.interests-title,
+.pre_text {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .training-text__link {
-    font-weight: normal;
+  font-weight: normal;
 }
 
-ul, ol {
- padding-left: 20px;    
+ul,
+ol {
+  padding-left: 20px;
 }
 
 li {
-  line-height: 1.5em;    
+  line-height: 1.5em;
 }
 
 .header-contacts li {
-  line-height: 1.1em; 
+  line-height: 1.1em;
   list-style-type: none;
 }
 
 .pre_text {
-    background-color: #e2e2e2;
-    color: #000;
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-  }
+  background-color: #e2e2e2;
+  color: #000;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
 
 .footer-text {
-    font-size: 16px;
-    text-align: justify;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    color: #757575;
-  }
+  font-size: 16px;
+  text-align: justify;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #757575;
+}
 
 .github-account {
   padding-left: 20px;
@@ -68,5 +86,3 @@ li {
 .rss-link {
   padding-left: 100px;
 }
-
-
