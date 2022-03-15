@@ -92,7 +92,7 @@
 function accum(str) {
   let newS = str.split('').reduce((acc, cur, i) => {
     let letter = ''
-    for (let n=1; n <= i+1; n++) {
+    for (let n=1; n &lt;= i+1; n++) {
       letter += cur; 
     } 
     let newLetter = letter[0].toUpperCase() + letter.toLowerCase().slice(1)
