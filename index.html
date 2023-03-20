@@ -87,10 +87,10 @@
     <section class="code_example">
       <h2 class="code_example_header">Code example:</h2>
       <pre class="pre_text"><code class="code">
-//accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+//accum("RqaEzty") -&gt; "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 
 function accum(str) {
-  let newS = str.split('').reduce((acc, cur, i) => {
+  let newS = str.split('').reduce((acc, cur, i) =&gt; {
     let letter = ''
     for (let n=1; n &lt;= i+1; n++) {
       letter += cur;
@@ -105,7 +105,7 @@ function accum(str) {
 //refactoring
 
 function accum(str) {
-  return str.split('').map((c, i)=>(c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+  return str.split('').map((c, i)=&gt;(c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 }
       </code></pre>
     </section>
